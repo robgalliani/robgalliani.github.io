@@ -1,3 +1,5 @@
-robgalliani.github.io
-=====================
-Hello
+FlipTurn
+========
+
+EECS 330 Final Project
+

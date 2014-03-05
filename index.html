@@ -1,7 +1,161 @@
-<html>
-<body>
-HELLO 
-HELLO
-HELLO
-</body> 
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>My Page</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+	<link rel="stylesheet" type="text/css" href="index.css">
+	
+	<link rel="stylesheet" href="themes/FlipTurn.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.1/jquery.mobile.structure-1.4.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
+
+
+
+	<script src="index.js"></script>
+</head> 
+<body> 
+
+<div data-role="page" id="home">
+
+	<div data-role="header" class="ui-bar-b">
+		<h1>FlipTurn Industries</h1>
+	</div><!-- /header -->
+
+	<div style="padding-top:10%;padding-bottom:30%;" data-role="content">	
+		<ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search The Swim World..." data-inset="true">
+			<li><a href="#page_profile">Willie Wildcat</a></li>
+			<li><a href="#">Wild McJohnson</a></li>
+			<li><a href="#">John Doe</a></li>
+			<li><a href="#">Ricky Gonzalez</a></li>
+		</ul>
+
+	</div><!-- /content -->
+
+	<div data-role="footer">		
+		<div data-role="navbar" data-id="main_nav" data-position="fixed">
+		<ul>
+			<li><a href="#page_myfeed" class="ui-state-persist">My Feed</a></li>
+			<li><a href="#">Recent Results</a></li>
+			<li><a href="#">Team Standings</a></li>
+		</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+
+<!-- MY FEED -->
+<div data-role="page" id="page_myfeed">
+
+	<div data-role="header">
+		<a href="#home" data-rel="back" data-icon="back">Back</a>
+		<h1>Your Feed</h1>
+		<a href="#home" data-role="button" data-icon="home" data-iconpos="notext">Home</a>
+	</div><!-- /header -->
+
+	<div style="margin-bottom:50px;" data-role="content">	
+		<br><br>
+		<ul data-role="listview">
+			<li><a href="#page_profile">Willie Wildcat 57:09 100 FREE</a></li>
+			<li>Michael Phillips 23:47 50 FREE</li>
+			<li>Abraham Lincoln 1:57:09 200 IM</li>
+			<li>Bruno Mars 2:03:27 200 BACK</li>
+			<li>Joseph Biden 14:47:39 1500 FREE</li>
+		</ul>		
+	</div><!-- /content -->
+
+	<div data-role="footer">		
+		<div data-role="navbar" data-id="main_nav" data-position="fixed">
+		<ul>
+			<li><a href="#page_myfeed" class="ui-btn-active ui-state-persist">My Feed</a></li>
+			<li><a href="#">Recent Results</a></li>
+			<li><a href="#">Team Standings</a></li>
+		</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+
+<!-- PROFILE PAGE -->
+<div data-role="page" id="page_profile">
+
+	<div data-role="header">
+		<a href="#home" data-rel="back" data-icon="back">Back</a>
+		<h1>Willie Wildcat</h1>
+		<a href="#home" data-role="button" data-icon="home" data-iconpos="notext">Home</a>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<div><h1 style="text-align:center">Willie Wildcat</h1></div>
+	
+		<img style="width:50%; float:left;" src="willie.png">
+		Will is an impressive Swimmer. He once swam down the entire pool. Thats a pretty impressive feat for a swimmer.<br><br><br>
+		Stats Stats Stats<br>
+		<div style="padding-bottom:10px;">
+		<a href="#signup_page"><button>FOLLOW</button></a>
+		<button>INFO</button>
+		<button >RIVALS</button>
+		
+	</div>
+	</div><!-- /content -->
+
+	<div data-role="footer">		
+		<div data-role="navbar" data-id="main_nav" data-position="fixed">
+		<ul>
+			<li><a href="#page_myfeed">My Feed</a></li>
+			<li><a href="#">Recent Results</a></li>
+			<li><a href="#">Team Standings</a></li>
+		</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+
+<!-- SIGN UP PAGE -->
+<div data-role="page" id="signup_page">
+
+	<div data-role="header">
+		<a href="#home" data-rel="back" data-icon="back">Back</a>
+		<h1>Sign Up</h1>
+		<a href="#home" data-role="button" data-icon="home" data-iconpos="notext">Home</a>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<div class="section" id="info">
+		<h2>Sign Up for FlipTurn Today!</h2>
+
+		<div class="text" id="txt1">Email(*):</div><br>
+		<input id="email" type="text" class="input"><br>
+		<div class="text" id="txt2">Phone Number:</div><br>
+		<input id="phone" type="text" class="input"><br>
+		<div class="pwd" id="txt3">Password:</div><br>
+		<input id="password" type="password" class="input"><br>
+		<div class="pwd" id="txt4">Retype Password:</div><br>
+		<input id="repassword" type="password" class="input"><br>
+
+		<input id="push" type="checkbox" value="Yes">Yes, I'd like to have meet results sent directly to my phone for the swimmers I "follow."<br>
+		<!--div id="push">Would you like meet results for this swimmer sent directly to your phone?</div-->
+		
+		<br>
+	  	<input class="submit" type="button" id="submit" value="Submit" />
+
+	</div>
+	</div><!-- /content -->
+
+	<div data-role="footer">		
+		<div data-role="navbar" data-id="main_nav" data-position="fixed">
+		<ul>
+			<li><a href="#page_myfeed">My Feed</a></li>
+			<li><a href="#">Recent Results</a></li>
+			<li><a href="#">Team Standings</a></li>
+		</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+
+
+</body>
 </html>
