@@ -1,0 +1,62 @@
+		/* body tag selector: define a default font. Never use Comic Sans. */
+		body {
+			font-family: "Comic Sans MS";
+		}
+
+		.section {
+			font-family: arial;
+		}
+
+		.section h2 {
+			font-family: Georgia;
+			color: maroon;
+		}
+
+		.background {
+			background-color: lightblue;
+			border: 1.5px solid rgb(121,121,121);
+        	border-radius: 10px;
+		}
+
+		.text {
+			height: 6px;
+
+			font-size: 20px;
+			font-weight: bolder;
+
+			margin-top: 5px;
+		}
+
+		.pwd {
+			height: 6px;
+
+			font-size: 20px;
+			font-weight: bolder;
+
+			margin-top: 5px; 
+		}
+
+		.input {
+			height: 25px;
+			width: 320px;
+
+			border: 1.5px;
+			border-radius: 5px;
+		}
+
+		.submit {
+			height: 40px;
+			width: 300px;
+
+			border: 1.5px solid rgb(121,121,121);
+			border-radius: 5px;
+			background-color: lightyellow;
+
+			font-size: 20px;
+			font-weight: bolder;
+		}
+
+		.submit:active {
+        border: 5px solid rgb(155,155,155);
+    }
+
