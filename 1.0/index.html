@@ -21,16 +21,20 @@
 <div data-role="page" id="home">
 
 	<div data-role="header" class="ui-bar-b">
-		<h1>FlipTurn Industries</h1>
+		<h1>FlipTurn</h1>
 	</div><!-- /header -->
 
-	<div style="padding-top:10%;padding-bottom:30%;" data-role="content">	
+	<div style="padding-top:10%;padding-bottom:30%;" data-role="content">
+
 		<ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search The Swim World..." data-inset="true">
 			<li><a href="#page_profile">Willie Wildcat</a></li>
 			<li><a href="#">Wild McJohnson</a></li>
 			<li><a href="#">John Doe</a></li>
 			<li><a href="#">Ricky Gonzalez</a></li>
 		</ul>
+		<br><br><br>
+		"FlipTurn is revolutionizing the way you follow Big 10 swimming" 
+		<br><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<b>-Robert Galliani</b>, Tech Visionary
 
 	</div><!-- /content -->
 
@@ -91,12 +95,23 @@
 		<div><h1 style="text-align:center">Willie Wildcat</h1></div>
 	
 		<img style="width:50%; float:left;" src="willie.png">
-		Will is an impressive Swimmer. He once swam down the entire pool. Thats a pretty impressive feat for a swimmer.<br><br><br>
-		Stats Stats Stats<br>
+		<b>Height:</b><br>
+		6' 3''<br>
+		<b>Weight:</b><br>
+		160 lbs<br>
+		<b>Hometown:</b><br>
+		Evanston, IL<br><br>
+		
+		<ul data-role="listview" data-inset="true"><b>BEST TIMES</b>
+			<li>100 FREE: 57.06</li>
+			<li>50 FREE: 23.06</li>
+			<li>100 BACK: 1:02.06</li>
+		</ul>
+
 		<div style="padding-bottom:10px;">
-		<a href="#signup_page"><button>FOLLOW</button></a>
-		<button>INFO</button>
-		<button >RIVALS</button>
+		<a href="#signup_page"><button data-mini="true" data-inline="true">FOLLOW</button></a>
+		<button data-mini="true" data-inline="true">INFO</button>
+		<button data-mini="true" data-inline="true">RIVALS</button>
 		
 	</div>
 	</div><!-- /content -->
@@ -124,24 +139,22 @@
 
 	<div data-role="content">	
 		<div class="section" id="info">
-		<div><h1 style="text-align:center font-size:20px">Sign Up for FlipTurn Today!</h1></div>
+		<h2>Sign Up for FlipTurn Today!</h2>
 
-		<label for="email">Email(*):</label>
-		<input id="email" type="text">
-		<label for="phone">Phone:</label>
-		<input id="phone" type="text" class="input">
-		<label for="password">Password:</label>
-		<input id="password" type="password" class="input">
-		<label for="repassword">Retype Password:</label>
-		<input id="repassword" type="password" class="input">
+		<div class="text" id="txt1">Email(*):</div><br>
+		<input id="email" type="text" class="input"><br>
+		<div class="text" id="txt2">Phone Number:</div><br>
+		<input id="phone" type="text" class="input"><br>
+		<div class="pwd" id="txt3">Password:</div><br>
+		<input id="password" type="password" class="input"><br>
+		<div class="pwd" id="txt4">Retype Password:</div><br>
+		<input id="repassword" type="password" class="input"><br>
 
-		<br>
-		<input id="push" type="checkbox" checked="checked" value="Yes">
-		<label for="push">Yes, I'd like to have meet results sent directly to my phone for the swimmers I "follow."</label>
+		<input id="push" type="checkbox" value="Yes">Yes, I'd like to have meet results sent directly to my phone for the swimmers I "follow."<br>
 		<!--div id="push">Would you like meet results for this swimmer sent directly to your phone?</div-->
 		
-	  	<a href="#page_follow"><button>SUBMIT</button></a>
-
+		<br>
+	  	<input class="submit" type="button" id="submit" value="Submit" />
 
 	</div>
 	</div><!-- /content -->
@@ -150,36 +163,6 @@
 		<div data-role="navbar" data-id="main_nav" data-position="fixed">
 		<ul>
 			<li><a href="#page_myfeed">My Feed</a></li>
-			<li><a href="#">Recent Results</a></li>
-			<li><a href="#">Team Standings</a></li>
-		</ul>
-		</div><!-- /navbar -->
-	</div><!-- /footer -->
-
-</div><!-- /page -->
-
-<!-- FOLLOW -->
-<div data-role="page" id="page_follow">
-
-	<div data-role="header">
-		<a href="#home" data-rel="back" data-icon="back">Back</a>
-		<h1>Your Feed</h1>
-		<a href="#home" data-role="button" data-icon="home" data-iconpos="notext">Home</a>
-	</div><!-- /header -->
-
-	<div style="margin-bottom:50px;" data-role="content">	
-		Thank you for Signing up with Flipturn.
-		You are now following Willie Wildcat!	
-	</div><!-- /content -->
-
-	<a href="#home"><button>RETURN TO HOMEPAGE</button></a>
-	<br>
-	<br>
-
-	<div data-role="footer">		
-		<div data-role="navbar" data-id="main_nav" data-position="fixed">
-		<ul>
-			<li><a href="#page_myfeed" class="ui-btn-active ui-state-persist">My Feed</a></li>
 			<li><a href="#">Recent Results</a></li>
 			<li><a href="#">Team Standings</a></li>
 		</ul>

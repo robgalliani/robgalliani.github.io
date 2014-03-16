@@ -9,6 +9,7 @@
 
 		.section h2 {
 			font-family: Georgia;
+			color: maroon;
 		}
 
 		.background {
@@ -19,7 +20,9 @@
 
 		.text {
 			height: 6px;
+
 			font-size: 20px;
+			font-weight: bolder;
 
 			margin-top: 5px;
 		}
