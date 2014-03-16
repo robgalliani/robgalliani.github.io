@@ -1,3 +1,24 @@
+		#background_frontpage {
+			background: #3270d2; /* Old browsers */
+			background: -moz-linear-gradient(top, #3270d2 0%, #2f6bca 50%, #7db9e8 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3270d2), color-stop(50%,#2f6bca), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top, #3270d2 0%,#2f6bca 50%,#7db9e8 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top, #3270d2 0%,#2f6bca 50%,#7db9e8 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top, #3270d2 0%,#2f6bca 50%,#7db9e8 100%); /* IE10+ */
+			background: linear-gradient(to bottom, #3270d2 0%,#2f6bca 50%,#7db9e8 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3270d2', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+		}
+
+		#h1 {
+			font: 40pt "Open Sans", sans-serif;
+			font-weight: 200;
+			text-rendering: optimizeLegibility;
+		 	-webkit-font-smoothing: antialiased;
+		 	color: black;
+		 	opacity: 0.3;
+		 	letter-spacing: 10px;
+		}
+
 		/* body tag selector: define a default font. Never use Comic Sans. */
 		body {
 			font-family: "Comic Sans MS";

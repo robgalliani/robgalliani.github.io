@@ -1,0 +1,76 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>My Page</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+</head> 
+<body> 
+
+<div data-role="page" id="home">
+
+
+
+	<div data-role="header">
+		<h1>FlipTurn Industries</h1>
+	</div><!-- /header -->
+	<div style="padding-top:30px;padding-bottom:10px;" data-role="content">	
+		<ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search The Swim World..." data-inset="true">
+			
+		</ul>
+
+	</div><!-- /content -->
+	<div><h1 style="text-align:center">Willie Wildcat</h1></div>
+	<div >
+	<img style="width:100%; align:center" src="/Users/MatthewSchley/Documents/EECS/EECS_330/willie.png">
+	</div>
+	<div style="padding-bottom:10px;">
+		<button>FOLLOW</button>
+		<button>INFO</button>
+		<button >RIVALS</button>
+		
+	</div>
+	
+
+	<div data-role="footer">		
+		<div data-role="navbar" data-id="main_nav" data-position="fixed">
+		<ul>
+			<li><a href="#page_myfeed" class="ui-state-persist">My Feed</a></li>
+			<li><a href="#">Recent Results</a></li>
+			<li><a href="#">Team Standings</a></li>
+		</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+
+<div data-role="page" id="page_myfeed">
+
+	<div data-role="header">
+		<a href="#home" data-rel="back" data-icon="back">Back</a>
+		<h1>Your Feed</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<br><br>
+		<ul data-role="listview" data-inset="true">
+			<li>Willie Wildcat 57:09 100 FREE</li>
+		</ul>		
+	</div><!-- /content -->
+
+	<div data-role="footer">		
+		<div data-role="navbar" data-id="main_nav" data-position="fixed">
+		<ul>
+			<li><a href="#page_myfeed" class="ui-btn-active ui-state-persist">My Feed</a></li>
+			<li><a href="#">Recent Results</a></li>
+			<li><a href="#">Team Standings</a></li>
+		</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+
+</body>
+</html>
