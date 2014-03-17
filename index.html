@@ -19,7 +19,7 @@
 <body> 
 
 <!-- SPLASH PAGE -->
-<div id="background_frontpage" data-role="page" id="firstpage">
+<div data-role="page" id="home">
 	<!--
 	<div data-role="header" class="ui-bar-b">
 		<h1>Flipturn</h1>
@@ -65,9 +65,9 @@
 <div data-role="page" id="page_myfeed">
 
 	<div data-role="header">
-		<a href="#firstpage" data-rel="back" data-icon="back">Back</a>
+		<a href="#hom" data-rel="back" data-icon="back">Back</a>
 		<h1>Your Feed</h1>
-		<a href="#firstpage" data-role="button" data-icon="home" data-iconpos="notext">Home</a>
+		<a href="#home" data-role="button" data-icon="home" data-iconpos="notext">Home</a>
 	</div><!-- /header -->
 
 	<div style="margin-bottom:50px;" data-role="content">	
@@ -97,29 +97,27 @@
 <div data-role="page" id="page_profile">
 
 	<div data-role="header">
-		<a href="#firstpage" data-rel="back" data-icon="back">Back</a>
+		<a href="#home" data-rel="back" data-icon="back">Back</a>
 		<h1>Willie Wildcat</h1>
-		<a href="#firstpage" data-role="button" data-icon="home" data-iconpos="notext">Home</a>
+		<a href="#home" data-role="button" data-icon="home" data-iconpos="notext">Home</a>
 	</div><!-- /header -->
 
 	<div data-role="content">	
-		<div>
-			<h1 style="text-align:center">Willie Wildcat</h1></div>
-			<img style="width:150px; float:left; border:1px solid black; margin-right:10px;" src="willie.jpg">
-			
-			<br><b>Height:</b> 6' 3''
-			<br><b>Weight:</b> 170 lbs
-			<br><b>Hometown:</b> Evanston, IL
-		<div>
+		<h1 style="text-align:center">Willie Wildcat</h1>
+		<img style="width:150px; float:left; border:1px solid black; margin-right:10px;" src="willie.jpg">
+		
+		<br><b>Height:</b> 6' 3''
+		<br><b>Weight:</b> 170 lbs
+		<br><b>Hometown:</b> Evanston, IL
 		<br>
 		<div style="width:70%;">
 			<br>
 			<table data-role="table" id="my-table" data-mode="columntoggle" class="ui-responsive table-stroke">
 				<thead>
-					<th data-priority="1">Event</th>
+					<th>Event</th>
 					<th>Time</th>
-					<th data-priority="2">Date</th>
-					<th data-priority="3">Meet</th>
+					<th>Date</th>
+					<th>Meet</th>
 				</thead>
 				<tbody>
 					<tr>
@@ -147,20 +145,21 @@
 	
 		<br>
 		<div style="padding-bottom:10px;">
-		<a href="#signup_page" data-role="button" data-mini="true" data-inline="true">FOLLOW</a>
-		<a data-role="button" data-mini="true" data-inline="true">INFO</a>
-		<a data-role="button" data-mini="true" data-inline="true">RIVALS</a>
-		
-	</div>
+			<!--<a href="#signup_page" data-role="button" data-mini="true" data-inline="true">FOLLOW</a>-->
+			<a href="#signup_page"><button data-mini="true" data-inline="true">FOLLOW</button></a>
+			<a data-role="button" data-mini="true" data-inline="true">INFO</a>
+			<a data-role="button" data-mini="true" data-inline="true">RIVALS</a>
+			
+		</div>
 	</div><!-- /content -->
 
 	<div data-role="footer" data-position="fixed">		
 		<div data-role="navbar" data-id="main_nav" data-position="fixed">
-		<ul>
-			<li><a href="#page_myfeed">My Feed</a></li>
-			<li><a href="#">Results</a></li>
-			<li><a href="#">Teams</a></li>
-		</ul>
+			<ul>
+				<li><a href="#page_myfeed">My Feed</a></li>
+				<li><a href="#">Results</a></li>
+				<li><a href="#">Teams</a></li>
+			</ul>
 		</div><!-- /navbar -->
 	</div><!-- /footer -->
 
@@ -170,9 +169,9 @@
 <div data-role="page" id="signup_page">
 
 	<div data-role="header">
-		<a href="#firstpage" data-rel="back" data-icon="back">Back</a>
+		<a href="#home" data-rel="back" data-icon="back">Back</a>
 		<h1>Sign Up</h1>
-		<a href="#firstpage" data-role="button" data-icon="home" data-iconpos="notext">Home</a>
+		<a href="#home" data-role="button" data-icon="home" data-iconpos="notext">Home</a>
 	</div><!-- /header -->
 
 	<div data-role="content">	
@@ -215,9 +214,9 @@
 <div data-role="page" id="page_follow">
 
 	<div data-role="header">
-		<a href="#firstpage" data-rel="back" data-icon="back">Back</a>
+		<a href="#home" data-rel="back" data-icon="back">Back</a>
 		<h1>Your Feed</h1>
-		<a href="#firstpage" data-role="button" data-icon="home" data-iconpos="notext">Home</a>
+		<a href="#home" data-role="button" data-icon="home" data-iconpos="notext">Home</a>
 	</div><!-- /header -->
 
 	<div style="margin-bottom:50px;" data-role="content">	
@@ -225,7 +224,7 @@
 		You are now following Willie Wildcat!	
 	</div><!-- /content -->
 
-	<a href="#firstpage"><button>RETURN TO HOMEPAGE</button></a>
+	<a href="#home"><button>RETURN TO HOMEPAGE</button></a>
 	<br>
 	<br>
 
