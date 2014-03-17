@@ -18,7 +18,8 @@
 </head> 
 <body> 
 
-<div id="background_frontpage" data-role="page" id="home">
+<!-- SPLASH PAGE -->
+<div id="background_frontpage" data-role="page" id="firstpage">
 	<!--
 	<div data-role="header" class="ui-bar-b">
 		<h1>Flipturn</h1>
@@ -28,16 +29,30 @@
 		<ul style="background:white;" data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search The Swim World..." data-inset="true">
 			<li><a href="#page_profile">Willie Wildcat</a></li>
 			<li><a href="#">Wild McJohnson</a></li>
+			<li><a href="#">Walter Mondale</a></li>
+			<li><a href="#">William Underwood</a></li>
+			<li><a href="#">West North</a></li>
+			<li><a href="#">Wiz Khalifa</a></li>
+			<li><a href="#">Wunder Bar</a></li>
+			<li><a href="#">Wallis Grevado</a></li>
+			<li><a href="#">Whit Houser</a></li>
+			<li><a href="#">Walt Disney</a></li>
 			<li><a href="#">John Doe</a></li>
 			<li><a href="#">Ricky Gonzalez</a></li>
 		</ul>
 
+		<br><br>
+		<div style="color:white; text-align:center; font: 'Times New Roman', sans-serif; font-weight:100;">
+			"FlipTurn is revolutionizing the way you follow Big 10 swimming"
+			<br>
+			&nbsp;&nbsp;-Nick Bilton, New York Times
+		</div>
 	</div><!-- /content -->
 
 	<div data-role="footer" data-position="fixed">		
 		<div data-role="navbar" data-id="main_nav">
 		<ul>
-			<li><a href="#page_myfeed" class="ui-state-persist">My Feed</a></li>
+			<li><a href="#page_myfeed">My Feed</a></li>
 			<li><a href="#">Results</a></li>
 			<li><a href="#">Teams</a></li>
 		</ul>
@@ -50,9 +65,9 @@
 <div data-role="page" id="page_myfeed">
 
 	<div data-role="header">
-		<a href="#home" data-rel="back" data-icon="back">Back</a>
+		<a href="#firstpage" data-rel="back" data-icon="back">Back</a>
 		<h1>Your Feed</h1>
-		<a href="#home" data-role="button" data-icon="home" data-iconpos="notext">Home</a>
+		<a href="#firstpage" data-role="button" data-icon="home" data-iconpos="notext">Home</a>
 	</div><!-- /header -->
 
 	<div style="margin-bottom:50px;" data-role="content">	
@@ -82,17 +97,55 @@
 <div data-role="page" id="page_profile">
 
 	<div data-role="header">
-		<a href="#home" data-rel="back" data-icon="back">Back</a>
+		<a href="#firstpage" data-rel="back" data-icon="back">Back</a>
 		<h1>Willie Wildcat</h1>
-		<a href="#home" data-role="button" data-icon="home" data-iconpos="notext">Home</a>
+		<a href="#firstpage" data-role="button" data-icon="home" data-iconpos="notext">Home</a>
 	</div><!-- /header -->
 
 	<div data-role="content">	
-		<div><h1 style="text-align:center">Willie Wildcat</h1></div>
+		<div>
+			<h1 style="text-align:center">Willie Wildcat</h1></div>
+			<img style="width:150px; float:left; border:1px solid black; margin-right:10px;" src="willie.jpg">
+			
+			<br><b>Height:</b> 6' 3''
+			<br><b>Weight:</b> 170 lbs
+			<br><b>Hometown:</b> Evanston, IL
+		<div>
+		<br>
+		<div style="width:70%;">
+			<br>
+			<table data-role="table" id="my-table" data-mode="columntoggle" class="ui-responsive table-stroke">
+				<thead>
+					<th data-priority="1">Event</th>
+					<th>Time</th>
+					<th data-priority="2">Date</th>
+					<th data-priority="3">Meet</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>100 FREE</td>
+						<td>49.06</td>
+						<td>2/12/14</td>
+						<td>NU vs Iowa</td>
+					</tr>
+					<tr>
+						<td>200 FREE</td>
+						<td>1:49.06</td>
+						<td>2/5/14</td>
+						<td>NU vs Michigan</td>
+					</tr>
+					<tr>
+						<td>500 FREE</td>
+						<td>4:19.06</td>
+						<td>1/13/14</td>
+						<td>NU vs Minnesota</td>
+					</tr>
+				</tbody>
+
+			</table>
+		</div>
 	
-		<img style="width:50%; float:left;" src="willie.png">
-		Will is an impressive Swimmer. He once swam down the entire pool. Thats a pretty impressive feat for a swimmer.<br><br><br>
-		Stats Stats Stats<br>
+		<br>
 		<div style="padding-bottom:10px;">
 		<a href="#signup_page" data-role="button" data-mini="true" data-inline="true">FOLLOW</a>
 		<a data-role="button" data-mini="true" data-inline="true">INFO</a>
@@ -117,9 +170,9 @@
 <div data-role="page" id="signup_page">
 
 	<div data-role="header">
-		<a href="#home" data-rel="back" data-icon="back">Back</a>
+		<a href="#firstpage" data-rel="back" data-icon="back">Back</a>
 		<h1>Sign Up</h1>
-		<a href="#home" data-role="button" data-icon="home" data-iconpos="notext">Home</a>
+		<a href="#firstpage" data-role="button" data-icon="home" data-iconpos="notext">Home</a>
 	</div><!-- /header -->
 
 	<div data-role="content">	
@@ -162,9 +215,9 @@
 <div data-role="page" id="page_follow">
 
 	<div data-role="header">
-		<a href="#home" data-rel="back" data-icon="back">Back</a>
+		<a href="#firstpage" data-rel="back" data-icon="back">Back</a>
 		<h1>Your Feed</h1>
-		<a href="#home" data-role="button" data-icon="home" data-iconpos="notext">Home</a>
+		<a href="#firstpage" data-role="button" data-icon="home" data-iconpos="notext">Home</a>
 	</div><!-- /header -->
 
 	<div style="margin-bottom:50px;" data-role="content">	
@@ -172,7 +225,7 @@
 		You are now following Willie Wildcat!	
 	</div><!-- /content -->
 
-	<a href="#home"><button>RETURN TO HOMEPAGE</button></a>
+	<a href="#firstpage"><button>RETURN TO HOMEPAGE</button></a>
 	<br>
 	<br>
 
